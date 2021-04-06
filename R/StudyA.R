@@ -1,6 +1,6 @@
 # Biomarker Regression Analysis
 #
-# Log transformed analysis of biomarker data from Study A comparing various doses of study drug against placebo
+# Log transformed analysis of biomarker data from Study A
 # Outputs csv file including Treatment, Time Point, Number of Patients, Geometric Mean, SE for Geometric Mean, Mean of log(biomarker), SD of log(biomarker), and 95% confidence intervals
 # Time points of interest include Baseline, Week 26 (midpoint), Week 52 (end of study), Change and Percent Change.
 #

@@ -1,6 +1,6 @@
 # Biomarker Regression Analysis
 #
-# Log transformed analysis of combined biomarker data from studies A, CF, I, G comparing various combined doses of study drug (and competitor drugs) against placebo
+# Log transformed analysis of combined biomarker data from studies A, CF, I, G
 # Separates combined data in 4 different summary sets based on baseline biomarker value.
 # Outputs csv file that includes all data split by thresholds where results of interest include %Change vs Placebo and Change in log(biomarker) vs Placebo
 # Also outputs separate analysis and summary files for each individual threshold in format similar to individual study analysis output (studycf).

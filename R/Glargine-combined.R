@@ -1,6 +1,6 @@
 # Biomarker Regression Analysis
 #
-# Log transformed analysis of combined biomarker data from studies B, D and X comparing various combined doses of study drug against an insulin glargine comparator
+# Log transformed analysis of combined biomarker data from studies B, D and X
 # Outputs csv file including Treatment,Number of Patients,  Mean of log(biomarker), SE of log(biomarker), and 95% confidence intervals
 # Results of interest include %Change vs Glargine and Change in log(biomarker) vs Glargine for separate doses of study drug.
 #

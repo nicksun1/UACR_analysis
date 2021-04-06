@@ -1,6 +1,6 @@
 # Biomarker Regression Analysis
 #
-# Log transformed analysis of combined biomarker data from studies B, D and X comparing various combined doses of study drug against an insulin glargine comparator
+# Log transformed analysis of combined biomarker data from studies B, D and X
 # Separates combined data in 4 different summary sets based on baseline biomarker value (<10, 10-30, 30-300, >300).
 # Outputs csv file that includes all data split by thresholds where results of interest include %Change vs Placebo and Change in log(biomarker) vs Placebo
 # Also outputs separate analysis and summary files for each individual threshold in format similar to individual study analysis output (GBCF).
@@ -48,7 +48,6 @@ studyb <- studyb %>% filter(LBTESTABR =="MAL/CR")
 trt_merge <- studyb %>% filter( VISID =="16") ###################
 trt_merge <- trt_merge[complete.cases(trt_merge[,4]),]
 trt_merge <- trt_merge %>% filter (LBRUCD=="95")
-#trt_merge$LBBLVALTR[is.na(trt_merge$LBBLVALTR)] <- trt_merge$LBRN
 
 trt_merge$aval_unchanged <- trt_merge$LBRN
 trt_merge$base_unchanged <- trt_merge$LBBLVALTR

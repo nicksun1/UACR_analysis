@@ -200,7 +200,6 @@ studyx_comb$Study <- "studyx"
 lab <- read.csv("labsc.csv")
 studyc <- lab %>% select(SUBJID, VISID, TRT, TRTSORT, LBTESTABR, LBTEST, LBRN, LBBLVALTR,LBRUCD)
 studyc <- studyc %>% filter(LBTESTABR =="MAL/CR")
-#bda <- studya %>% filter(SAFFL=="Y")
 trt_merge <- studyc %>% filter(VISID =="1" |VISID =="12"|VISID =="8"|VISID =="801")
 
 trt_merge <- trt_merge[complete.cases(trt_merge[,4]),]
@@ -271,11 +270,7 @@ all <- merge(all, studyx_comb, all=TRUE)
 all <- merge(all, studyc_comb, all=TRUE)
 all <- merge(all, studye_comb, all=TRUE)
 
-all <- all%>% mutate(TRT=replace(TRT,TRT=="Drug 1.5","Drug_1.5"))
-all <- all%>% mutate(TRT=replace(TRT,TRT=="Drug 0.75","Drug_0.75"))
-all <- all%>% mutate(TRT=replace(TRT,TRT=="Insulin Glargine","Glargine"))
 
-all <- all%>% filter(TRT=="Drug_1.5" |TRT=="Drug_0.75"|TRT=="Placebo"|TRT=="Glargine")
 placebo_studies <- all %>% filter(Study=="studycf"|Study=="studya"|Study=="studyg"|Study=="studyi")
 glargine_studies <- all %>% filter(Study=="studyx"|Study=="studyd"|Study=="studyb")
 

@@ -1,7 +1,7 @@
 # Biomarker Regression Analysis
 #
 # Summary and Analysis of UACR including percent change from baseline via log-transformed analysis MMRM from baseline through 52 weeks
-# Least square mean percent change and standard error between study drug and placebo
+# Least square mean percent change and standard error
 #
 # Fit to model log(y) = log(y_b) + trt
 # After model is finished transform back by LSM=exp(LSM) and SE=exp(LSM)*SE
@@ -9,7 +9,7 @@
 # Also find geometric mean and SE
 # (Find n, lsm, geometric mean, se for baseline, post-baseline (week 52), change from baseline and percent change from baseline)
 #
-# Placebo controlled (GBCF, CBDG, GBDA, GBDI), Insulin Glargine (GBDB, GBDD, GBDX)
+# Placebo controlled (Study CF, Study G, Study A, Study I), Insulin Glargine (Study B, Study D, Study X)
 #
 
 
